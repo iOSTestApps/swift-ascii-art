@@ -19,6 +19,9 @@
 		03F080921AED5CF700A20334 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F080911AED5CF700A20334 /* monkey.png */; };
 		03F080961AEDD29200A20334 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F080951AEDD29200A20334 /* batman.png */; };
 		03F080981AEDD7D000A20334 /* AsciiPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F080971AEDD7D000A20334 /* AsciiPalette.swift */; };
+		4D29773A8FBCD1E7F3BD33AD /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F6C662CECFD16D463369E7 /* BuddyBuildSDK.framework */; };
+		876C4F5DEE8C58B91EE73C22 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10B63E62EDE5D63A55CEF9E /* AssetsLibrary.framework */; };
+		95C1B1F5919C6A7FBBE0D599 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B45B173E704CE02BF96EB5C /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		03F080911AED5CF700A20334 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monkey.png; path = images/monkey.png; sourceTree = "<group>"; };
 		03F080951AEDD29200A20334 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = batman.png; path = images/batman.png; sourceTree = "<group>"; };
 		03F080971AEDD7D000A20334 /* AsciiPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AsciiPalette.swift; path = SwiftAsciiArt/AsciiPalette.swift; sourceTree = "<group>"; };
+		9B45B173E704CE02BF96EB5C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A0F6C662CECFD16D463369E7 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		A53E8CCFF5F12BDA6D6D73E5 /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F10B63E62EDE5D63A55CEF9E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D29773A8FBCD1E7F3BD33AD /* BuddyBuildSDK.framework in Frameworks */,
+				876C4F5DEE8C58B91EE73C22 /* AssetsLibrary.framework in Frameworks */,
+				95C1B1F5919C6A7FBBE0D599 /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 				0384D6C81AEC4BB900242145 /* app */,
 				0384D6EF1AEC4D7B00242145 /* images */,
 				0384D6C71AEC4BB900242145 /* products */,
+				B9F1BD05AA8877ACEA6A4995 /* Frameworks */,
+				A53E8CCFF5F12BDA6D6D73E5 /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +112,16 @@
 				03F080911AED5CF700A20334 /* monkey.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		B9F1BD05AA8877ACEA6A4995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0F6C662CECFD16D463369E7 /* BuddyBuildSDK.framework */,
+				F10B63E62EDE5D63A55CEF9E /* AssetsLibrary.framework */,
+				9B45B173E704CE02BF96EB5C /* CoreText.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,9 +315,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftAsciiArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -303,9 +330,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftAsciiArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
