@@ -19,9 +19,15 @@
 		03F080921AED5CF700A20334 /* monkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F080911AED5CF700A20334 /* monkey.png */; };
 		03F080961AEDD29200A20334 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 03F080951AEDD29200A20334 /* batman.png */; };
 		03F080981AEDD7D000A20334 /* AsciiPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F080971AEDD7D000A20334 /* AsciiPalette.swift */; };
+		4F7A21887D5C32D0C7C54CA4 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07750EA8274D527C9116E89 /* AssetsLibrary.framework */; };
+		6D854E4F1EC7BB7C04B8832F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 432D932F2E6CFA387C746520 /* CoreTelephony.framework */; };
+		7B59AC38445A7CD48533D569 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9139645A46DED7962C528C /* SystemConfiguration.framework */; };
+		81E20707CE31C297ACD9132A /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018F0A2F68526674BAE26C22 /* BuddyBuildSDK.framework */; };
+		CEB3E7A98B6F5C2623A3C5AA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3B061E8617793EE4CD227 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018F0A2F68526674BAE26C22 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		0384D6C61AEC4BB900242145 /* SwiftAsciiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAsciiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0384D6CA1AEC4BB900242145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0384D6CB1AEC4BB900242145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,11 @@
 		03F080911AED5CF700A20334 /* monkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = monkey.png; path = images/monkey.png; sourceTree = "<group>"; };
 		03F080951AEDD29200A20334 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = batman.png; path = images/batman.png; sourceTree = "<group>"; };
 		03F080971AEDD7D000A20334 /* AsciiPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AsciiPalette.swift; path = SwiftAsciiArt/AsciiPalette.swift; sourceTree = "<group>"; };
+		432D932F2E6CFA387C746520 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		74E226833834536B68C49CFE /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		9D9139645A46DED7962C528C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D07750EA8274D527C9116E89 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		DFE3B061E8617793EE4CD227 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E20707CE31C297ACD9132A /* BuddyBuildSDK.framework in Frameworks */,
+				4F7A21887D5C32D0C7C54CA4 /* AssetsLibrary.framework in Frameworks */,
+				CEB3E7A98B6F5C2623A3C5AA /* CoreText.framework in Frameworks */,
+				6D854E4F1EC7BB7C04B8832F /* CoreTelephony.framework in Frameworks */,
+				7B59AC38445A7CD48533D569 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,8 @@
 				0384D6C81AEC4BB900242145 /* app */,
 				0384D6EF1AEC4D7B00242145 /* images */,
 				0384D6C71AEC4BB900242145 /* products */,
+				0708FFA4BA4AF64B24B09F83 /* Frameworks */,
+				74E226833834536B68C49CFE /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +118,18 @@
 				03F080911AED5CF700A20334 /* monkey.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		0708FFA4BA4AF64B24B09F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018F0A2F68526674BAE26C22 /* BuddyBuildSDK.framework */,
+				D07750EA8274D527C9116E89 /* AssetsLibrary.framework */,
+				DFE3B061E8617793EE4CD227 /* CoreText.framework */,
+				432D932F2E6CFA387C746520 /* CoreTelephony.framework */,
+				9D9139645A46DED7962C528C /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +325,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftAsciiArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -306,9 +341,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftAsciiArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 			};
 			name = Release;
 		};
